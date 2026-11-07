@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b16">
+<title>مهرسام حقیقت‌سرشت | وب‌سایت شخصی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+margin:0;
+background:#080b16;
+color:#fff;
+font-family:Vazirmatn,Tahoma,sans-serif;
+line-height:2;
+}
+:root{--blue:#6d8cff;--purple:#9b72ff}
+header{
+position:sticky;top:0;z-index:10;
+background:#080b16eF;
+backdrop-filter:blur(15px);
+border-bottom:1px solid #28345a;
+padding:15px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo{font-size:21px;font-weight:900;color:var(--blue)}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:#ddd;text-decoration:none;font-size:13px}
+nav a:hover{color:var(--blue)}
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+padding:90px 9%;
+background:radial-gradient(ellipse at 75% 45%,#202d59 0%,#080b16 65%);
+}
+.hero-content{max-width:750px}
+.tag{color:#8ba6ff;letter-spacing:2px;font-size:13px}
+h1{font-size:48px;line-height:1.6;margin:15px 0}
+h1 span{color:var(--blue)}
+.hero p{color:#b5bfd5;font-size:17px}
+.btn{
+display:inline-block;
+padding:12px 28px;
+border-radius:9px;
+background:linear-gradient(120deg,#6487ff,#956cff);
+color:white;text-decoration:none;
+margin:10px 5px;
+font-weight:bold;
+box-shadow:0 0 25px #647cff35;
+}
+.btn:hover{transform:translateY(-3px)}
+section{padding:80px 8%}
+.heading{text-align:center;margin-bottom:40px}
+.heading h2{color:#8da5ff;font-size:30px}
+.heading p{color:#929db7}
+.about-box{
+background:#11182b;
+border:1px solid #28365e;
+border-radius:18px;
+padding:35px;
+text-align:center;
+}
+.about-box p{color:#c2cbe0}
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+.card{
+background:linear-gradient(145deg,#151e36,#0e1323);
+border:1px solid #28365e;
+border-radius:15px;
+padding:25px;
+text-align:center;
+transition:.3s;
+}
+.card:hover{transform:translateY(-6px);border-color:#829aff}
+.card h3{color:#8da5ff}
+.card p{color:#aeb9d1;font-size:14px}
+.icon{font-size:35px}
+.contact{text-align:center;background:#10172a}
+footer{
+text-align:center;
+padding:25px;
+color:#8490aa;
+border-top:1px solid #28345a;
+}
+@media(max-width:650px){
+header{flex-direction:column;gap:10px}
+nav{justify-content:center;gap:12px}
+h1{font-size:34px}
+.cards{grid-template-columns:1fr}
+section{padding:55px 6%}
+.hero{min-height:70vh;padding:65px 7%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">مهرسام حقیقت‌سرشت</div>
+<nav>
+<a href="#home">خانه</a>
+<a href="#about">درباره من</a>
+<a href="#skills">مهارت‌ها</a>
+<a href="#projects">پروژه‌ها</a>
+<a href="#contact">ارتباط</a>
+</nav>
+</header>
+
+<main>
+<div class="hero" id="home">
+<div class="hero-content">
+<div class="tag">PERSONAL WEBSITE | 2026</div>
+<h1>سلام، من <span>مهرسام</span> هستم</h1>
+<p>به دنیای شخصی من خوش آمدید؛
+اینجا جایی برای ایده‌ها، خلاقیت‌ها و مسیر پیشرفت من است.</p>
+<a href="#about" class="btn">بیشتر درباره من</a>
+<a href="#projects" class="btn">مشاهده پروژه‌ها</a>
+</div>
+</div>
+
+<section id="about">
+<div class="heading">
+<h2>درباره من</h2>
+<p>کمی بیشتر با من آشنا شوید</p>
+</div>
+<div class="about-box">
+<h2>مهرسام حقیقت‌سرشت</h2>
+<p>من به دنیای فناوری، طراحی وب و ساخت ایده‌های جدید علاقه‌مندم.
+این وب‌سایت فضای شخصی من برای نمایش علایق و پروژه‌هایم است.</p>
+</div>
+</section>
+
+<section id="skills">
+<div class="heading">
+<h2>علاقه‌مندی‌ها</h2>
+<p>چیزهایی که دوست دارم دنبال کنم</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">💻</div><h3>طراحی وب</h3><p>ساخت وب‌سایت‌های مدرن و زیبا</p></div>
+<div class="card"><div class="icon">🎨</div><h3>طراحی و خلاقیت</h3><p>ایده‌پردازی و خلق طرح‌های جدید</p></div>
+<div class="card"><div class="icon">🥋</div><h3>ورزش</h3><p>علاقه به ورزش و کاراته</p></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="heading">
+<h2>پروژه‌های من</h2>
+<p>بخشی از کارهایی که ساخته‌ام</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">🌐</div><h3>رزین لند</h3><p>پروژه فروشگاه محصولات رزینی</p></div>
+<div class="card"><div class="icon">✨</div><h3>Vasmeh Beauty</h3><p>طراحی وب‌سایت آرایشگاه وسمه</p></div>
+<div class="card"><div class="icon">🚀</div><h3>پروژه‌های آینده</h3><p>ایده‌های جدید در راه هستند</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="heading">
+<h2>ارتباط با من</h2>
+<p>برای ارتباط و همکاری می‌توانید از راه‌های ارتباطی من استفاده کنید.</p>
+</div>
+<a class="btn" href="https://instagram.com/" target="_blank">اینستاگرام</a>
+</section>
+</main>
+
+<footer>
+© 2026 مهرسام حقیقت‌سرشت | تمام حقوق محفوظ است.
+</footer>
+</body>
+  </html>
