@@ -3,103 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b16">
+<meta name="theme-color" content="#070a13">
 <title>مهرسام حقیقت‌سرشت | وب‌سایت شخصی</title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+:root{
+--blue:#668cff;
+--purple:#9874ff;
+--bg:#070a13;
+--card:#101729;
+--text:#fff;
+--muted:#a4aec4;
+}
 body{
-margin:0;
-background:#080b16;
-color:#fff;
+background:var(--bg);
+color:var(--text);
 font-family:Vazirmatn,Tahoma,sans-serif;
 line-height:2;
+overflow-x:hidden;
 }
-:root{--blue:#6d8cff;--purple:#9b72ff}
+a{text-decoration:none;color:inherit}
 header{
-position:sticky;top:0;z-index:10;
-background:#080b16eF;
-backdrop-filter:blur(15px);
-border-bottom:1px solid #28345a;
-padding:15px 7%;
+position:sticky;
+top:0;
+z-index:100;
+background:#080c17eF;
+backdrop-filter:blur(18px);
+border-bottom:1px solid #27345a;
+padding:14px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
-.logo{font-size:21px;font-weight:900;color:var(--blue)}
-nav{display:flex;gap:20px;flex-wrap:wrap}
-nav a{color:#ddd;text-decoration:none;font-size:13px}
+.logo{
+font-size:19px;
+font-weight:900;
+color:#91aaff;
+}
+nav{display:flex;gap:22px}
+nav a{
+font-size:13px;
+color:#cbd2e4;
+transition:.3s;
+}
 nav a:hover{color:var(--blue)}
 .hero{
-min-height:85vh;
+min-height:88vh;
 display:flex;
 align-items:center;
-padding:90px 9%;
-background:radial-gradient(ellipse at 75% 45%,#202d59 0%,#080b16 65%);
+justify-content:center;
+text-align:center;
+padding:80px 7%;
+background:
+radial-gradient(ellipse at 50% 35%,#202e5c 0%,#11172a 35%,#070a13 75%);
+position:relative;
 }
-.hero-content{max-width:750px}
-.tag{color:#8ba6ff;letter-spacing:2px;font-size:13px}
-h1{font-size:48px;line-height:1.6;margin:15px 0}
-h1 span{color:var(--blue)}
-.hero p{color:#b5bfd5;font-size:17px}
+.hero-content{
+max-width:800px;
+animation:appear 1s ease;
+}
+.profile{
+width:165px;
+height:165px;
+margin:0 auto 25px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+font-weight:900;
+background:linear-gradient(140deg,#1b3274,#38205e);
+border:3px solid #7e9dff;
+box-shadow:0 0 25px #648aff,0 0 70px #648aff55;
+animation:glow 3s infinite alternate;
+}
+.tag{
+color:#91aaff;
+font-size:13px;
+letter-spacing:3px;
+}
+h1{
+font-size:48px;
+line-height:1.6;
+margin:15px 0;
+}
+h1 span{color:#819eff}
+.hero p{
+color:#b3bdd4;
+font-size:16px;
+max-width:650px;
+margin:auto;
+}
 .btn{
 display:inline-block;
-padding:12px 28px;
+margin:25px 6px 0;
+padding:11px 27px;
 border-radius:9px;
-background:linear-gradient(120deg,#6487ff,#956cff);
-color:white;text-decoration:none;
-margin:10px 5px;
+background:linear-gradient(120deg,#527bff,#916bff);
+color:white;
 font-weight:bold;
-box-shadow:0 0 25px #647cff35;
+box-shadow:0 0 20px #648aff45;
+transition:.3s;
 }
-.btn:hover{transform:translateY(-3px)}
-section{padding:80px 8%}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 30px #648aff90}
+.btn-outline{
+background:transparent;
+border:1px solid #648aff;
+color:#a9bdff;
+}
+section{padding:85px 8%}
 .heading{text-align:center;margin-bottom:40px}
-.heading h2{color:#8da5ff;font-size:30px}
-.heading p{color:#929db7}
+.heading h2{
+color:#91aaff;
+font-size:29px;
+}
+.heading p{color:var(--muted);font-size:14px}
 .about-box{
-background:#11182b;
-border:1px solid #28365e;
+max-width:850px;
+margin:auto;
+background:linear-gradient(145deg,#131d35,#0c1221);
+border:1px solid #2b3c6b;
 border-radius:18px;
-padding:35px;
+padding:40px;
 text-align:center;
 }
-.about-box p{color:#c2cbe0}
+.about-box h3{color:#91aaff;margin-bottom:15px}
+.about-box p{color:#c1cbe0}
 .cards{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
 .card{
-background:linear-gradient(145deg,#151e36,#0e1323);
-border:1px solid #28365e;
-border-radius:15px;
-padding:25px;
+background:linear-gradient(145deg,#141e36,#0c1221);
+border:1px solid #26375f;
+border-radius:16px;
+padding:28px 20px;
 text-align:center;
-transition:.3s;
+transition:.35s;
 }
-.card:hover{transform:translateY(-6px);border-color:#829aff}
-.card h3{color:#8da5ff}
-.card p{color:#aeb9d1;font-size:14px}
-.icon{font-size:35px}
-.contact{text-align:center;background:#10172a}
+.card:hover{
+transform:translateY(-8px);
+border-color:#7796ff;
+box-shadow:0 10px 35px #527cff25;
+}
+.icon{font-size:38px}
+.card h3{color:#91aaff;margin:10px 0}
+.card p{font-size:13px;color:#aab5cc}
+.projects .card{min-height:190px}
+.contact{
+text-align:center;
+background:radial-gradient(ellipse at center,#17234a,#080c17 75%);
+}
+.contact p{color:#aebbd5}
+.contact .btn{margin-top:20px}
 footer{
 text-align:center;
 padding:25px;
-color:#8490aa;
-border-top:1px solid #28345a;
+border-top:1px solid #26345a;
+color:#8b96ae;
+font-size:12px;
+}
+footer span{color:#91aaff}
+@keyframes appear{
+from{opacity:0;transform:translateY(35px)}
+to{opacity:1;transform:translateY(0)}
+}
+@keyframes glow{
+from{box-shadow:0 0 15px #648aff}
+to{box-shadow:0 0 35px #648aff,0 0 80px #648aff70}
 }
 @media(max-width:650px){
-header{flex-direction:column;gap:10px}
-nav{justify-content:center;gap:12px}
+header{flex-direction:column;gap:8px}
+nav{gap:13px;justify-content:center;flex-wrap:wrap}
+nav a{font-size:12px}
 h1{font-size:34px}
+.hero{min-height:75vh}
+.profile{width:135px;height:135px;font-size:45px}
 .cards{grid-template-columns:1fr}
-section{padding:55px 6%}
-.hero{min-height:70vh;padding:65px 7%}
+section{padding:60px 6%}
+.about-box{padding:25px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -107,71 +197,116 @@ section{padding:55px 6%}
 <nav>
 <a href="#home">خانه</a>
 <a href="#about">درباره من</a>
-<a href="#skills">مهارت‌ها</a>
+<a href="#interests">علایق</a>
 <a href="#projects">پروژه‌ها</a>
 <a href="#contact">ارتباط</a>
 </nav>
 </header>
 
 <main>
-<div class="hero" id="home">
+
+<section class="hero" id="home">
 <div class="hero-content">
-<div class="tag">PERSONAL WEBSITE | 2026</div>
+
+<div class="profile">MH</div>
+
+<div class="tag">WELCOME TO MY DIGITAL WORLD</div>
+
 <h1>سلام، من <span>مهرسام</span> هستم</h1>
-<p>به دنیای شخصی من خوش آمدید؛
-اینجا جایی برای ایده‌ها، خلاقیت‌ها و مسیر پیشرفت من است.</p>
-<a href="#about" class="btn">بیشتر درباره من</a>
-<a href="#projects" class="btn">مشاهده پروژه‌ها</a>
+
+<p>
+به وب‌سایت شخصی من خوش آمدید.
+اینجا دنیای ایده‌ها، خلاقیت‌ها، علاقه‌مندی‌ها و مسیر پیشرفت من است.
+</p>
+
+<a href="#about" class="btn">درباره من</a>
+<a href="#projects" class="btn btn-outline">پروژه‌های من</a>
+
 </div>
-</div>
+</section>
 
 <section id="about">
 <div class="heading">
 <h2>درباره من</h2>
-<p>کمی بیشتر با من آشنا شوید</p>
+<p>آشنایی بیشتر با مهرسام حقیقت‌سرشت</p>
 </div>
+
 <div class="about-box">
-<h2>مهرسام حقیقت‌سرشت</h2>
-<p>من به دنیای فناوری، طراحی وب و ساخت ایده‌های جدید علاقه‌مندم.
-این وب‌سایت فضای شخصی من برای نمایش علایق و پروژه‌هایم است.</p>
+<h3>مهرسام حقیقت‌سرشت</h3>
+<p>
+من به دنیای تکنولوژی، طراحی وب، خلاقیت و ساخت ایده‌های جدید علاقه دارم.
+این وب‌سایت فضای شخصی من برای معرفی خودم و نمایش پروژه‌هایم است.
+</p>
 </div>
 </section>
 
-<section id="skills">
+<section id="interests">
 <div class="heading">
-<h2>علاقه‌مندی‌ها</h2>
+<h2>علاقه‌مندی‌های من</h2>
 <p>چیزهایی که دوست دارم دنبال کنم</p>
 </div>
+
 <div class="cards">
-<div class="card"><div class="icon">💻</div><h3>طراحی وب</h3><p>ساخت وب‌سایت‌های مدرن و زیبا</p></div>
-<div class="card"><div class="icon">🎨</div><h3>طراحی و خلاقیت</h3><p>ایده‌پردازی و خلق طرح‌های جدید</p></div>
-<div class="card"><div class="icon">🥋</div><h3>ورزش</h3><p>علاقه به ورزش و کاراته</p></div>
+<div class="card">
+<div class="icon">💻</div>
+<h3>تکنولوژی</h3>
+<p>دنیای دیجیتال و فناوری‌های جدید</p>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>طراحی</h3>
+<p>طراحی خلاقانه و ساخت ایده‌های تازه</p>
+</div>
+
+<div class="card">
+<div class="icon">🥋</div>
+<h3>کاراته</h3>
+<p>ورزش، تمرین و پیشرفت</p>
+</div>
 </div>
 </section>
 
-<section id="projects">
+<section class="projects" id="projects">
 <div class="heading">
 <h2>پروژه‌های من</h2>
-<p>بخشی از کارهایی که ساخته‌ام</p>
+<p>نمونه‌ای از فعالیت‌های من در دنیای وب</p>
 </div>
+
 <div class="cards">
-<div class="card"><div class="icon">🌐</div><h3>رزین لند</h3><p>پروژه فروشگاه محصولات رزینی</p></div>
-<div class="card"><div class="icon">✨</div><h3>Vasmeh Beauty</h3><p>طراحی وب‌سایت آرایشگاه وسمه</p></div>
-<div class="card"><div class="icon">🚀</div><h3>پروژه‌های آینده</h3><p>ایده‌های جدید در راه هستند</p></div>
+<div class="card">
+<div class="icon">🌐</div>
+<h3>رزین لند</h3>
+<p>پروژه فروشگاه محصولات رزینی</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Vasmeh Beauty</h3>
+<p>طراحی وب‌سایت آرایشگاه وسمه</p>
+</div>
+
+<div class="card">
+<div class="icon">🚀</div>
+<h3>پروژه‌های آینده</h3>
+<p>ایده‌های تازه در مسیر ساخت</p>
+</div>
 </div>
 </section>
 
 <section class="contact" id="contact">
 <div class="heading">
 <h2>ارتباط با من</h2>
-<p>برای ارتباط و همکاری می‌توانید از راه‌های ارتباطی من استفاده کنید.</p>
+<p>از طریق اینستاگرام با من در ارتباط باشید.</p>
 </div>
-<a class="btn" href="https://instagram.com/" target="_blank">اینستاگرام</a>
+<a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">اینستاگرام</a>
 </section>
+
 </main>
 
 <footer>
-© 2026 مهرسام حقیقت‌سرشت | تمام حقوق محفوظ است.
+© 2026 <span>مهرسام حقیقت‌سرشت</span> | تمام حقوق محفوظ است.
 </footer>
+
 </body>
-  </html>
+</html>
